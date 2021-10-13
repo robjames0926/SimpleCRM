@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ForgotUsernameActivity">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="339dp"
+        android:layout_height="378dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/round_frame_layout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/login_edit_background"
+            android:hint="Enter Email..."
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/findUserBtn"
+            android:layout_width="218dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="95dp"
+            android:layout_marginTop="95dp"
+            android:background="@drawable/button_background"
+            android:text="Find Username"
+            app:iconTint="#FDB716" />
+
+        <EditText
+            android:id="@+id/showUsername"
+            android:layout_width="match_parent"
+            android:layout_height="115dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="160dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/login_edit_background"
+            android:hint="Looking for username..."
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="105dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="210dp"
+            android:layout_marginTop="300dp"
+            android:background="@drawable/button_background"
+            android:text="Login"
+            app:iconTint="#FDB716" />
+
+
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="234dp"
+        android:layout_height="204dp"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/logo" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="299dp"
+        android:layout_height="421dp"
+        android:layout_marginEnd="260dp"
+        android:layout_marginBottom="420dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/circle" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="299dp"
+        android:layout_height="421dp"
+        android:layout_marginStart="260dp"
+        android:layout_marginBottom="492dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/circle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
